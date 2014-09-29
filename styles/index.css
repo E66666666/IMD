@@ -1,0 +1,20 @@
+#youtube {
+	width: 560px;
+	margin: auto;
+}
+
+#banner {
+	background-image: url(../img/banner1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 960px;
+	height: 120px;
+	margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+	#banner {
+		width: 100%;
+	}
+}
