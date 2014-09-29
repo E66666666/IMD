@@ -27,9 +27,9 @@
 	padding:0;
 } /* Removed default margins and padding because they're annoying*/
 
-p, h1, h2 {
-	margin-top: 1em;	
-	margin-bottom: 1em;	
+p, h1, h2, h3 {
+	margin-top: 0.3em;	
+	margin-bottom: 0.3em;	
 } /* Added default margins and padding again for text-elements */
 
 html, body {
