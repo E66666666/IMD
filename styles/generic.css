@@ -168,10 +168,13 @@ li {
 	#wrapper, #header, #menu, #footer {
 		width: 100%;
 	}
-	
+	#menucontainer {
+		height: 100px;
+	}
 	#main {
 		padding-top: 105px; /*60px + 45px from the #main padding-top above*/
 	}
+	
 	
 	.menulinks {
 		text-align: center;
@@ -184,7 +187,4 @@ li {
 		padding: 0;
 	}
 	
-	#menucontainer {
-		height: auto;
-	}
 }
