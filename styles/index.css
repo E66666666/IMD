@@ -46,7 +46,8 @@
 }
 
 #bigtext {
-	width: 50%;
+	width: 48%;
+	text-align: justify;
 }
 
 #bigimg {

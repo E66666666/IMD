@@ -127,7 +127,7 @@ li {
 	min-height: 100px;
 	padding-top: 120px; /* header + menubar // DOESN'T WORK WITH FLOATING HEADER IMAGES AND STUFF*/
 	padding-top: 45px; /* arbitrary value depending on image height and I do not like this at all */
-	padding-bottom: 100px;
+	padding-bottom: 120px; /* footer + 20px for niceness */
 }
 
 /*
@@ -139,6 +139,7 @@ li {
 	margin-top: -100px;
 	height: 100px;
 	clear:both;
+	
 	/*height:100px;
 	position:absolute;
 	bottom:0;
@@ -148,7 +149,16 @@ li {
 #footer {
 	width: 960px;
 	margin: auto;
-	line-height: 80px;
+}
+
+#footer p {
+	float: left;
+}
+
+#social {
+	margin-right: 20px;
+	float: right;
+	line-height: 100px;
 }
 
 /*
