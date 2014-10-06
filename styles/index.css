@@ -3,20 +3,6 @@
 	margin: auto;
 }
 
-#banner {
-	background-image: url(../img/banner1.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	width: 960px;
-	height: 120px;
-	margin: auto;
-	font-size: 48pt;
-	text-align: center;
-	line-height: 100px;
-	color: #FFFFFF;
-}
-
 #smallwrapper {
 	padding-top: 24px;
 	display:flex;
@@ -56,6 +42,21 @@
 	background-size: cover;
 	width: 50%;
 	height: 280px;
+}
+
+/*
+	Responsive!
+*/
+
+@media screen and (max-width: 960px) {
+	#banner{
+		width: 100%;
+	}
+	
+	.smallnews {
+		width: 30%;
+	}
+	
 }
 
 @media screen and (max-width: 600px) {

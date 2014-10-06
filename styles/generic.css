@@ -64,7 +64,7 @@ li {
 	min-height: 100%;
 }
 
-#headercontainer {
+header {
 	/*background-image: url(../img/header-back.png);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -94,10 +94,9 @@ li {
 	float: left;
 }
 
-#menucontainer {
+nav {
 	background-color: #E74C3C;
 	height: 20px;
-	margin-bottom: -120px; /* negative pixels of header and menu, plus 20 for spacing */
 }
 
 #menu {
@@ -118,32 +117,41 @@ li {
 .menulinks a {
 	color: #3C3C3C;
 }
+
+#banner {
+	background-image: url(../img/banner1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 960px;
+	height: 120px;
+	margin: auto;
+	font-size: 48pt;
+	text-align: center;
+	line-height: 100px;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px rgba(0,0,0,1);
+	font-weight: normal;
+}
+
 /*
 	This little thing helps keeping the damned footer in place and compensates for header, menu and footer.
 */
-#main {
+section {
 	clear: both;
 	overflow:auto;
 	min-height: 100px;
-	padding-top: 120px; /* header + menubar // DOESN'T WORK WITH FLOATING HEADER IMAGES AND STUFF*/
-	padding-top: 45px; /* arbitrary value depending on image height and I do not like this at all */
-	padding-bottom: 120px; /* footer + 20px for niceness */
 }
 
 /*
 	Here be footer content
 */
-#footercontainer {
+footer {
 	background-color: #2980B9;
 	position: relative;
-	margin-top: -100px;
+	margin-top: 20px;
 	height: 100px;
 	clear:both;
-	
-	/*height:100px;
-	position:absolute;
-	bottom:0;
-	left:0;*/
 }
 
 #footer {
@@ -164,15 +172,28 @@ li {
 /*
 	Responsive!
 */
-@media screen and (max-width: 600px) {	
-	#wrapper, #header, #menu, #footer {
+@media screen and (max-width: 960px) {
+	#wrapper, #header, #menu, #footer{
 		width: 100%;
 	}
-	#menucontainer {
-		height: 100px;
+	#banner {
+		width: 100%;
 	}
-	#main {
-		padding-top: 105px; /*60px + 45px from the #main padding-top above*/
+}
+
+@media screen and (max-width: 600px) {	
+	#wrapper, #header, #menu, #footer, #banner {
+		width: 100%;
+	}
+	
+	#banner {
+		height: 50px;
+		font-size: 20pt;
+		line-height: 50px;
+	}
+	
+	nav {
+		height: auto;
 	}
 	
 	
