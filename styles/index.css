@@ -66,8 +66,16 @@
 */
 
 @media screen and (max-width: 1080px) {
-	.smallnews {
-		width: 30%;
+	#smallwrapper, #bigwrapper {
+		display: block;
+		
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	.smallnews, #bigimg, #bigtext {
+		float: left;
+		width: 100%;
 	}
 	
 }
