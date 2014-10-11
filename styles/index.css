@@ -1,8 +1,3 @@
-#youtube {
-	width: 560px;
-	margin: auto;
-}
-
 #smallwrapper {
 	padding-bottom: 24px;
 	display:flex;
@@ -16,15 +11,23 @@
 	whitespace: nowrap;
 }
 
-#smallimg2 { background-image: url(../img/placeholder.jpg); }
-#smallimg3 { background-image: url(../img/placeholder.jpg); }
+/*
+	Any image can be put in smallimg and dynamically resize and vertically center itself
+	If the image has a very wide AR this won't work well and the top and bottom are gray
+	to keep the blocks visually the same.
+*/
 
 .smallimgwrap {
 	height: 160px;
 	overflow: hidden;
+	background-color: #C2C2C2;
 }
 
 .smallimg {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+    width:100%;
 }
 
 #bigwrapper {
@@ -43,17 +46,29 @@
 	padding: 0;
 }
 
+/*
+	Wrapper for big img
+*/
 #bigimg {
-	background-image: url(../img/placeholderbig.jpg);
+	/*background-image: url(../img/photodune-5063740-student-with-laptop-l.jpg);
 	background-position: center center;
-	background-size: cover;
+	background-size: cover;*/
 	width: 50%;
 	height: 280px;
+	overflow: hidden;
+	background-color: #C2C2C2;
+}
+
+#bigimg img {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+    width:100%;
 }
 
 #youtubecontainer {
-	width: 50%;
-	height: auto;
+	width: 480px;
+	height: 266px;
 }
 
 #youtube {
@@ -65,30 +80,27 @@
 	Responsive!
 */
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 800px) {
 	#smallwrapper, #bigwrapper {
 		display: block;
-		
-		margin-left: 20px;
-		margin-right: 20px;
 	}
 	
 	.smallnews, #bigimg, #bigtext {
-		float: left;
+		margin-top: 24px;
 		width: 100%;
 	}
 	
+	#youtubecontainer{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
 }
 
 @media screen and (max-width: 480px) {
-	#smallwrapper, #bigwrapper {
-		display: block;
-	}
-	
-	.smallnews, #bigimg, #bigtext {
-		float: left;
+	#youtubecontainer, #youtube {
 		width: 100%;
 	}
-	
-	
 }
