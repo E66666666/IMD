@@ -1,19 +1,21 @@
 #contact {
-	float: left;
 }
 
-#mapsitem {
-	float: right;
-	width: 300px;
+#mapwrap {
+	width: 255px;
+	height: 446px;
 }
 
+#Map {
+	width: 255px;
+	height: 202px;
+}
 
 @media screen and (max-width: 800px) {
 	
 }
 
 @media screen and (max-width: 480px) {
-	#mapsitem {
-		width: 100%;
+	#mapwrap {
 	}
 }

@@ -30,18 +30,18 @@
     width:100%;
 }
 
-#bigwrapper {
+.bigwrapper {
 	padding-bottom: 24px;
 	display:flex;
 	justify-content:space-between;
 }
 
-#bigtext {
+.bigtext {
 	width: 48%;
 	text-align: justify;
 }
 
-#bigtext p {
+.bigtext p {
 	margin: 0;
 	padding: 0;
 }

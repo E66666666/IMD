@@ -43,18 +43,16 @@ body {
 a {
 	text-decoration: none;
 }
-
-ul {
-	list-style-type: none;
-}
-
-li {
-	display: inline;
-}
-
 /*
 	Header /w menu
 */
+#menu ul {
+	list-style-type: none;
+}
+
+.menulinks {
+	display: inline;
+}
 
 
 header {
@@ -193,6 +191,11 @@ footer {
 	margin-right: 20px;
 	float: right;
 	line-height: 100px;
+	list-style-type: none;
+}
+
+#social li {
+	display: inline;
 }
 
 /*
