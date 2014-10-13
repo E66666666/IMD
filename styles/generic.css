@@ -103,7 +103,7 @@ nav {
 }
 
 .menulinks {
-	font-family: "OpenSans Regular";
+	font-family: "OpenSans Regular", "Segoe UI";
 	display: table-cell;
 	width: 10%; /*1080 divided by 5, why 10%?*/
 	line-height: 16px;
