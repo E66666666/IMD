@@ -73,7 +73,7 @@ header {
 	background-size: cover;*/
 	/*background: linear-gradient(to right, #C1C1C1, #E6E6E6);*/
 	height: 100px;
-	background-color: rgb(76,188,254);
+	background-color: rgb(75,185,255);
 	background-image: url(../img/header-bg.png);
 	background-repeat: no-repeat;
 	background-position: left center;
@@ -233,7 +233,6 @@ footer {
 	#menu ul a{
 		font-size: 11pt;
 	}
-
 }
 
 @media screen and (max-width: 480px) {
