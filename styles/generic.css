@@ -47,7 +47,7 @@ h2 {
 
 
 /*
-	Banner content
+	Banner content, chosen from /js/bannerrotate.js
 */
 .banner1 { background-image: url('../img/banner1.png') !important; } 
 .banner2 { background-image: url('../img/banner2.jpg') !important; } 
