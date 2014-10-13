@@ -1,0 +1,41 @@
+#wrapcontentfirst
+{
+	width: 50%;
+	float: left;
+}
+
+#tabletitle
+{
+	font-weight: bold;
+}
+
+#tabletitle td {
+	width: 120px;
+}
+
+#wrapimages
+{
+	width: 50%;
+	float: right;
+}
+
+#wrapimages img
+{
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+	#wrapcontentfirst
+	{
+		width: 100%;
+	}
+	
+	#wrapimages
+	{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+}
