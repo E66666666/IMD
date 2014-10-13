@@ -35,7 +35,7 @@ html, body {
 	Here be allround styling
 */
 body {
-	font-family: "Akzidenz Grotesk Light", Segoe UI;
+	font-family: "Akzidenz Grotesk Light", "Segoe UI";
 	background-color: #F0F0F0;
 	color: #333;
 }

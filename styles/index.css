@@ -82,11 +82,11 @@
 */
 
 @media screen and (max-width: 800px) {
-	#smallwrapper, #bigwrapper {
+	#smallwrapper, .bigwrapper {
 		display: block;
 	}
 	
-	.smallnews, #bigimg, #bigtext {
+	.smallnews, #bigimg, .bigtext {
 		margin-top: 24px;
 		width: 100%;
 	}
