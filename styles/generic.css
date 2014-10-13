@@ -1,11 +1,11 @@
 /*
 	IMD generic CSS.
-	Create new .css files for other pages, this only styles the header, menu, background and footer
+	Create new .css files for other pages, this only styles the header, menu, banner background and footer
 	for all pages and does some resets.
 */
 
 /*
-	Defines and resets
+	Fonts
 */
 @font-face {
     font-family: "OpenSans Regular";
@@ -17,6 +17,10 @@
     src: url('../fonts/akzidenz-grotesk-light.ttf');
 }
 
+/*
+	Defines and specific resets
+	We don't need to reset everything and only apply margins and padding of everything to 0
+*/
 * {
 	margin:0;
 	padding:0;
@@ -25,17 +29,8 @@
 p, h1, h2, h3 {
 	margin-top: 0.3em;	
 	margin-bottom: 0.3em;	
-} /* Added default margins and padding again for text-elements */
+} /* Added default top-bottom margins and padding again for text-elements */
 
-html, body {
-	height: 100%;
-}
-
-body {
-	font-family: "Akzidenz Grotesk Light", "Segoe UI";
-	background-color: #F0F0F0;
-	color: #333;
-}
 
 a {
 	text-decoration: none;
@@ -46,6 +41,11 @@ h2 {
 }
 
 
+html, body {
+	height: 100%;
+} /* Push down the footer if the content is smaller than screen size */
+
+
 /*
 	Banner content, chosen from /js/bannerrotate.js
 */
@@ -54,18 +54,19 @@ h2 {
 .banner3 { background-image: url('../img/banner3.jpg') !important; } 
 .banner4 { background-image: url('../img/banner4.jpg') !important; } 
 
+
 /*
-	Header /w menu
+	Begin styling
 */
-#menu ul {
-	list-style-type: none;
-}
+body {
+	font-family: "Akzidenz Grotesk Light", "Segoe UI";
+	background-color: #F0F0F0;
+	color: #333;
+} 
 
-.menulinks {
-	display: inline;
-}
-
-
+/*
+	Header styling
+*/
 header {
 	/*background-image: url(../img/header-back.png);
 	background-repeat: no-repeat;
@@ -102,6 +103,9 @@ header {
 	float: left;
 }
 
+/*
+	Menu/Navigation bar
+*/
 nav {
 	background-color: #333;
 	width: 100%;
@@ -115,7 +119,10 @@ nav {
 	text-align: justify;
 }
 
-/*#menu ul a {*/
+#menu ul {
+	list-style-type: none;
+}
+
 .menulinks {
 	font-family: "OpenSans Regular", "Segoe UI";
 	display: table-cell;
@@ -140,8 +147,35 @@ nav {
 	color: #333;
 }
 
+/*
+	Content-wrapper and content
+*/
+#wrapper {
+	width: 1080px; /*960px + 60px both sides*/
+	margin: auto;
+	min-height: 100%;
+	background-color: #FFF;
+	margin-top: 20px;
+	box-shadow: 0 0 3px 0px;
+}	/* Visual content wrapper */
+
+
+section {
+	clear: both;
+	overflow:auto;
+	min-height: 100px;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}	/* Actual content wrapper*/
+
+/*
+	Banner styling
+*/
 #banner {
-	background-image: url(../img/banner1.png);
+	background-image: url(../img/banner1.png); /* Overwritten by js/bannerrotation.js in JS-activated browsers */
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -156,30 +190,6 @@ nav {
 	font-weight: normal;
 	white-space: nowrap;
 	margin-bottom: 24px;
-}
-
-/*
-	Content-wrapper and content
-*/
-#wrapper {
-	width: 1080px; /*960px + 60px both sides*/
-	margin: auto;
-	min-height: 100%;
-	background-color: #FFF;
-	margin-top: 20px;
-	box-shadow: 0 0 3px 0px;
-}
-
-
-section {
-	clear: both;
-	overflow:auto;
-	min-height: 100px;
-	width: 960px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 40px; /* To space the content to be below and above the edges */
-	padding-bottom: 40px;
 }
 
 /*

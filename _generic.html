@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<!--
+	Template for adding new pages
+-->
+<html>
+	<head>
+		<title>ICT and Media Design - Fontys Hogescholen</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">		
+		<link rel="icon" type="imge/png" href="img/favicon.png">
+		<link href="styles/generic.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header>
+			<div id="header">
+				<a href="index.html"><img id="logoimd" src="img/logoimdwhite.png" alt="IMD Logo"/></a>
+				<a href="http://www.fontys.nl"><img id="logofontys" src="img/logofontys.png" alt="Fontys Logo"/></a>
+			</div>
+		</header>
+		<nav>
+			<div id="menu">
+				<ul>
+					<li class="menulinks"><a href="index.html">Home</a></li>
+					<li class="menulinks"><a href="studiekeuze.html">Studiekeuze</a></li>
+					<li class="menulinks"><a href="over.html">Over de opleiding</a></li>
+					<li class="menulinks"><a href="bezoek.html">Bezoek ons</a></li>
+					<li class="menulinks"><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div id="wrapper">
+			<section>
+				<h1 id="banner">ICT & Media Design</h1>
+				<!--
+					Here be some content
+				-->
+				
+			</section>
+		</div>
+		<footer>
+			<div id="footer">
+				<p>&copy; Minh-Triet Diep, 2014</p>
+				<ul id="social">
+					<li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ffontys.nl%2FStuderen.htm%3FelementHolder%3D89590&amp;title=Studeren"><img alt="Linkedin" src="img/ico-linkedin-16.png" height="16" width="16"/></a></li>
+					
+					<li><a href="http://twitter.com/share?url=http%3A%2F%2Ffontys.nl%2FStuderen.htm%3FelementHolder%3D89590&amp;lang=nl"><img alt="Twitter" src="img/ico-twitter-16.png" height="16" width="16"/></a></li>
+					
+					<li><a href="https://plusone.google.com/_/+1/confirm?hl=nl&amp;url=http%3A%2F%2Ffontys.nl%2FStuderen.htm%3FelementHolder%3D89590"><img alt="Google" src="img/ico-googleplus-16.png" height="16" width="24"/></a></li>					
+				</ul>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			/*
+				JS to defer CSS loading of page-specific CSS so Google PageSpeed is happy.
+			*/
+			function loadStyleSheet(src){
+				if (document.createStyleSheet) document.createStyleSheet(src);
+				else {
+					var stylesheet = document.createElement('link');
+					stylesheet.href = src;
+					stylesheet.rel = 'stylesheet';
+					stylesheet.type = 'text/css';
+					document.getElementsByTagName('head')[0].appendChild(stylesheet);
+				}
+			}
+			// loadStyleSheet(src); // Replace src with css path
+		</script>
+		<script src="js/bannerrotate.js" type="text/javascript"></script>
+	</body>
+</html>
