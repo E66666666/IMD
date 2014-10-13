@@ -115,7 +115,8 @@ nav {
 	text-align: justify;
 }
 
-#menu ul a {
+/*#menu ul a {*/
+.menulinks {
 	font-family: "OpenSans Regular", "Segoe UI";
 	display: table-cell;
 	width: 10%; /*20% behaves like 10%, 10% like 20%????????????*/
@@ -125,16 +126,16 @@ nav {
 	height: 40px;
 }
 
-#menu ul a{
+.menulinks a {
 	color: #CCC;
 }
 
-#menu ul a:hover {
+#menu li:hover, #menu li:hover a {
 	background-color: #CCC;
 	color: #333;
 }
 
-#menu ul .active:hover, .active li, .active {
+.active, .active a {
 	background-color: #AAA;
 	color: #333;
 }
