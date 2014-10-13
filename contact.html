@@ -6,7 +6,6 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">		
 		<link rel="icon" type="imge/png" href="img/favicon.png">
 		<link href="styles/generic.css" rel="stylesheet" type="text/css">
-		<link href="styles/contact.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<header>
@@ -74,6 +73,19 @@
 				</ul>
 			</div>
 		</footer>
+		<script type="text/javascript">
+		function loadStyleSheet(src){
+			if (document.createStyleSheet) document.createStyleSheet(src);
+			else {
+				var stylesheet = document.createElement('link');
+				stylesheet.href = src;
+				stylesheet.rel = 'stylesheet';
+				stylesheet.type = 'text/css';
+				document.getElementsByTagName('head')[0].appendChild(stylesheet);
+			}
+		}
+		loadStyleSheet("styles/contact.css");
+		</script>
 		<script src="js/bannerrotate.js" type="text/javascript"></script>
 	</body>
 </html>
