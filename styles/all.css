@@ -548,6 +548,11 @@ footer {
 	{
 		margin: auto;
 	}
+	
+	#overzicht_opleiding
+	{
+		font-size: 12px;
+	}
 }
 
 @media screen and (max-width: 480px) {
