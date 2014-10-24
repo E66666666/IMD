@@ -30,6 +30,11 @@
 	padding:0;
 } /* Removed default margins and padding because they're annoying*/
 
+html ol{
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
 h1, h2, h3 {
 	margin-top: 0.6em;
 	margin-bottom: 0.6em;
@@ -278,6 +283,12 @@ footer {
 	display: inline;
 }
 
+#wrapper a {
+	font-weight: bold;
+	color: #326CB1;
+}
+
+
 /*
 	index styling
 */
@@ -428,8 +439,8 @@ footer {
 	border-color: #3D3D3D;
 	border-radius: 4px;
 	color: #333;
+	text-decoration: none !important;
 }
-
 
 .bigbutton:hover {
 	background-color: #AAA;
