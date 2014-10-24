@@ -5,6 +5,10 @@
 */
 
 /*
+	Begin overall styling, applying to all pages
+*/
+
+/*
 	Fonts
 */
 @font-face {
@@ -26,7 +30,12 @@
 	padding:0;
 } /* Removed default margins and padding because they're annoying*/
 
-p, h1, h2, h3 {
+h1, h2, h3 {
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+}
+
+p {
 	margin-top: 0.3em;	
 	margin-bottom: 0.3em;	
 } /* Added default top-bottom margins and padding again for text-elements */
@@ -36,9 +45,9 @@ a {
 	text-decoration: none;
 }
 
-h2 {
-	font-size: 16pt;
-}
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
 
 
 html, body {
@@ -63,6 +72,10 @@ body {
 	background-color: #F0F0F0;
 	color: #333;
 } 
+
+h1, h2, h3 {
+	font-family: "OpenSans Regular", "Helvetica";
+}
 
 /*
 	Header styling
@@ -190,6 +203,7 @@ section {
 	font-weight: normal;
 	white-space: nowrap;
 	margin-bottom: 24px;
+	border-radius: 4px;
 }
 
 /*
@@ -197,7 +211,7 @@ section {
 */
 footer {
 	/*background-color: #2980B9;*/
-	background-color: rgb(76,188,254);
+	background-color: rgb(50,108,177);
 	position: relative;
 	margin-top: 20px;
 	height: 100px;
@@ -208,14 +222,18 @@ footer {
 #footer {
 	width: 960px;
 	margin: auto;
+	color: #FFFFFF;
 }
 
 #footer p {
+	padding-left: 20px;
+	margin: 0;
 	float: left;
+	line-height: 100px;
 }
 
 #social {
-	margin-right: 20px;
+	padding-right: 20px;
 	float: right;
 	line-height: 100px;
 	list-style-type: none;
@@ -224,6 +242,10 @@ footer {
 #social li {
 	display: inline;
 }
+
+/*
+	index styling
+*/
 
 /*
 	Wrapper for the small news items
@@ -237,7 +259,6 @@ footer {
 .smallnews {
     vertical-align: top;
 	width: 300px;
-	text-align: justify;
 }
 
 /*
@@ -270,7 +291,6 @@ footer {
 
 .bigtext {
 	width: 48%;
-	text-align: justify;
 }
 
 .bigtext p {
@@ -307,8 +327,96 @@ footer {
 	border: 0;
 }
 
+/*
+	Over de opleiding
+*/
+.left img {
+	width: 100%;
+	border-radius: 4px;
+}
+
+#overzicht_opleiding {
+	border-collapse:collapse;
+	border-spacing:0;
+	width: 100%;
+	background-color: #EEE;
+	border-color: #3D3D3D;
+}
+
+#overzicht_opleiding td {
+	font-family: "OpenSans Regular";
+	padding:10px 5px;
+	border-style:solid;
+	border-width:1px;
+	overflow:hidden;
+	word-break:normal;
+}
+
+#overzicht_opleiding th {
+	font-family: "OpenSans Regular";
+	font-weight:normal;
+	padding:10px 5px;
+	border-style:solid;
+	border-width:1px;
+	overflow:hidden;
+	word-break:normal;
+}
+
+#overzicht_opleiding tr {
+	text-align:center;
+}
+
+.infoblok {
+	color: #333;
+	background-color: #EEE;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #3D3D3D;
+	border-radius: 4px;
+}
+
+.infoblok h3 {
+	margin-top: 0;
+}
+
+.infolist li {
+	list-style-type: none;
+}
+
+#aanmelden {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 32pt;
+	text-align: center;
+	background-color: #EEE;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #3D3D3D;
+	border-radius: 4px;
+}
+
+#aanmelden a {
+	color: #333;
+}
+
+#aanmelden:hover {
+	background-color: #AAA;
+}
+
+#aanmelden:hover a {
+	color: #333;
+}
+
+/*
+	Contact page
+*/
+
 #contact {
 	float: left;
+	width: 40%;
 }
 
 #mapwrapper{
@@ -322,18 +430,46 @@ footer {
 	border: 0;
 }
 
-#wrapcontentfirst
+/*
+	Bezoek page
+*/
+.horizontal{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin-bottom: 40px;
+}
+
+.left
 {
-	width: 50%;
+	width: 60%;
 	float: left;
 }
 
-#tabletitle
+.right
+{
+	width: 35%;
+	float: right;
+}
+
+.datum {
+	color: #333;
+	background-color: #EEE;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #3D3D3D;
+	border-radius: 4px;
+}
+
+.datumtitle
 {
 	font-weight: bold;
 }
 
-#tabletitle td {
+.datumtitle td {
 	width: 120px;
 }
 
@@ -369,6 +505,10 @@ footer {
 		font-size: 11pt;
 	}
 	
+	.right, .left {
+		display: block;
+		width: 100%;
+	}
 	
 	#smallwrapper, .bigwrapper {
 		display: block;
