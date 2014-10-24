@@ -497,6 +497,10 @@ footer {
 		width: 100%;
 	}
 	
+	#banner, .left img {
+		border-radius: 0px;
+	}
+	
 	#banner{
 		font-size: 32pt;
 	}
@@ -538,6 +542,11 @@ footer {
 	#wrapimages
 	{
 		width: 100%;
+	}
+	
+	.datum
+	{
+		margin: auto;
 	}
 }
 
