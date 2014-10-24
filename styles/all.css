@@ -328,10 +328,6 @@ footer {
 	width: 48%;
 }
 
-.bigtext p {
-	margin: 0;
-	padding: 0;
-}
 
 .bigtext h1 {
 	margin-top: 0;
@@ -523,6 +519,12 @@ footer {
 	
 	#wrapper, #header, #menu, #footer, #banner, section, #contact{
 		width: 100%;
+	}
+	
+	h1, h2, h3, p
+	{
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 	
 	#banner, .left img {
