@@ -12,7 +12,9 @@ window.onscroll = function OnScroll() {
 	var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
 	if ( scrollTop >= offset) {
 		document.querySelector('nav').classList.add('stickToTop');
+		document.querySelector('.show-menu').classList.add('stickToTop');
 	} else {
 		document.querySelector('nav').classList.remove('stickToTop');
+		document.querySelector('.show-menu').classList.remove('stickToTop');
 	}
 }

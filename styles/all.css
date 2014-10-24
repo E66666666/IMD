@@ -116,6 +116,34 @@ header {
 	float: left;
 }
 
+
+/*
+	Hide Show Menu bar
+*/
+.show-menu {
+	font-family: "OpenSans Regular", "Segoe UI";
+	color: #CCC;
+	background: #333;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	display: none;
+	width: 100%;
+	position: absolute;
+	cursor: pointer;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+/*
+	Show menu when invisible checkbox is checked
+*/
+input[type=checkbox]:checked ~ nav{
+    display: inline-block;
+}
+
 /*
 	Menu/Navigation bar
 */
@@ -485,7 +513,6 @@ footer {
 	width: 100%;
 }
 
-
 /*
 	Responsive!
 */
@@ -566,27 +593,21 @@ footer {
 	}
 	
 	nav {
-		height: 40px;
-	}
-		
-	#menu li {
-		display: none;
+		height: auto;
 		background-color: #333;
+		display: none;
+		margin-top: 40px;
 	}
-		
+	
+	.show-menu {
+		display:block;
+	}
+			
 	#menu .active {
 		display: block;
-		height: 40px;
-		line-height: 40px;
 		background-color: #AAA;
 	}
-	
-	#menu ul:hover li {
-		display: block;
-		height: 40px;
-		line-height: 40px;
-	}
-	
+		
 	.menulinks {
 		text-align: center;
 		display: block;
